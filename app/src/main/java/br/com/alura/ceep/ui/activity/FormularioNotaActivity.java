@@ -21,6 +21,7 @@ import static br.com.alura.ceep.ui.activity.NotaActivityConstantes.POSICAO_INVAL
 public class FormularioNotaActivity extends AppCompatActivity {
 
 
+    public static final String TITLE_APPBAR = "Criar nota";
     private int posicaoRecebida = POSICAO_INVALIDA;
     private TextView titulo;
     private TextView descricao;
@@ -29,6 +30,8 @@ public class FormularioNotaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario_nota);
+
+        setTitle(TITLE_APPBAR);
 
         inicializaCampos();
 
